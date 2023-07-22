@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.microsoft {
+  width: 440px;
+  margin: 20px auto;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 20px 0;
+  float: left;
+}
+.square.red {
+  background-color: #f35325;
+}
+.square.green {
+  background-color: #81bc06;
+}
+.square.blue {
+  background-color: #05a6f0;
+}
+.square.yellow {
+  background-color: #ffba08;
+}

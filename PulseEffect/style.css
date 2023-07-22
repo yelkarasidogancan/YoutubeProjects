@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+.pulse {
+  background-color: aliceblue;
+  padding: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.pulse:hover {
+  animation: pulse 2s linear infinite backwards;
+}
+.pulse i {
+  font-size: 60px;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.01);
+  }
+}

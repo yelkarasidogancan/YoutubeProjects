@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+}
+div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-bottom: 5px solid turquoise;
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
