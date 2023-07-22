@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1f1f;
+}
+.button {
+  background-color: orange;
+  padding: 20px;
+  box-shadow: 0 0 5px orange, 0 0 25px orange;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  box-shadow: 0 0 5px orange, 0 0 50px orange, 0 0 100px orange;
+}
