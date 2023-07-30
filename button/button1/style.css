@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #3e3e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pulse {
+  border: 2px solid rgb(252, 118, 0);
+  padding: 10px 20px;
+  color: rgb(252, 118, 0);
+  cursor: pointer;
+}
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(252, 118, 0);
+  }
+}
