@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  perspective: 1000px;
+  background-color: #1e1e1e;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.sphere {
+  width: 100px;
+  height: 100px;
+  background: #3498db;
+  border-radius: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 3s infinite linear;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes rotate {
+  0% {
+    background: #3498db;
+  }
+
+  50% {
+    background: #db3434;
+  }
+  100% {
+    background: #3498db;
+  }
+}
